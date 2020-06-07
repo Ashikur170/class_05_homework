@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Element Reference</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<base href="" target="_blank">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h2>1. HTML &#60;a&#62; Tag</h2>
+	<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+	<p>----Default CSS style----</p>
+	<pre>
+a:link, a:visited {
+	color: (internal value);
+	text-decoration: underline;
+	cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  	color: (internal value);
+}
+</pre>
+	<br><br>
+	
+	<h2>2. HTML &#60;abbr&#62; Tag</h2>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+	<p>----Default CSS style----</p>
+	<pre>
+abbr {
+  display: inline;
+}</pre>
+	<br><br>
+	
+	<h2>3. HTML &#60;address&#62; Tag</h2>
+	<address>
+		Written by <a href="http://wwww.example.com">Jon Doe</a>.<br>
+		Visit us at:<br>
+		Example.com<br>
+		Box 564, Disneyland<br>
+		USA
+	</address>
+	<p>----Default CSS style----</p>
+	<pre>
+address {
+	display: block;
+	font-style: italic;
+}</pre>
+	<br><br>
+
+
+
+	<h2>4. HTML &#60;article&#62; Tag</h2>
+	<article>
+	<h3>Google Chrome</h3>
+	<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+	</article>
+
+	<article>
+	<h3>Mozilla Firefox</h3>
+	<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+	</article>
+
+	<article>
+	<h3>Microsoft Edge</h3>
+	<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+	</article>
+	<p>----Default CSS style----</p>
+	<pre>
+article {
+	display: block;
+}</pre>
+	<br><br>
+
+	<h2>5. HTML &#60;aside&#62; Tag</h2>
+	<h4>Check the right sidebar</h4>
+	<aside>
+		<h4>&#60;aside&#62; element as sidebar</h4>
+	</aside>
+	<p>----Custom CSS style----</p>
+	<pre>
+aside{
+	position: fixed;
+	top: 40%;
+	right: 0;
+	border: 1px solid red;
+	padding: 5px;
+}</pre>
+	<br><br>
+
+
+	<h2>6. HTML &#60;audio&#62; Tag</h2>
+	<h4>There are three supported audio formats in HTML: MP3, WAV, and OGG.</h4>
+	<audio controls>
+	  <source src="media/nokia.mp3" type="audio/mp3">
+	  Your browser does not support the audio tag.
+	</audio>
+	<p>----No Default CSS style :: Rather depends on browser----</p>
+	<br><br>
+
+	
+	<h2>7. HTML &#60;b&#62; Tag</h2>
+	<p>This is normal text - <b>and this is bold text</b>.</p>
+	<p>----Default CSS style----</p>
+	<pre>
+b {
+  font-weight: bold;
+}</pre>
+	<br><br>
+
+
+	<h2>8. HTML &#60;base&#62; Tag</h2>
+	<h4>In this document, I have set base targent as _blank. So any &#60;a&#62; tag links will be open in a new tab.</h4>
+	<aside>
+		<h4>&#60;aside&#62; element as sidebar</h4>
+	</aside>
+	<p>----No Default CSS style----</p>
+	<br><br>
+
+
+	<h2>9. HTML &#60;bdi&#62; Tag</h2>
+	<h4>&#60;bdi&#62; tag is used to isolate sorrounding directional text.</h4>
+	<ul>
+	  <li>User <bdi>hrefs</bdi>: 60 points</li>
+	  <li>User <bdi>jdoe</bdi>: 80 points</li>
+	  <li>User <bdi>إيان</bdi>: 90 points  <-- This is a sorrounding text</li>
+	</ul>
+	<p>----No Default CSS style----</p>
+	<br><br>
+
+	<h2>10. HTML &#60;bdo&#62; Tag</h2>
+	<h4>Need to assign the direction. Need to use dir="" attribute.</h4>
+	<bdo dir="rtl">
+		This text will go right-to-left.
+	</bdo>
+	<p>----Default CSS style----</p>
+	<pre>
+bdo {
+  unicode-bidi: bidi-override;
+}</pre>
+	<br><br>
+
+	<h2>11. HTML &#60;blockquote&#62; Tag</h2>
+	<h4>The &#60;blockquote&#62; tag specifies a section that is quoted from another source</h4>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+		For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+	</blockquote>
+	<p>----Default CSS style----</p>
+	<pre>
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}</pre>
+	<br><br>
+
+	<h2>12. HTML &#60;br&#62; Tag</h2>
+	<h4>&#60;br&#62; tag is used to add a newline i.e. \n in between to element or section.</h4>
+	<p>Here I have added two &#60;br&#62; tag, you can find them by inspecting or view page source.</p>
+	<br><br>
+
+	<h2>13. HTML &#60;button&#62; Tag</h2>
+	<h4>The &#60;blockquote&#62; tag specifies a section that is quoted from another source</h4>
+	<button type="button">Click Me!</button>
+	<button type="button" disabled="">Disabled Button</button>
+	<br><br>
+
+	<h2>14. HTML &#60;caption&#62; Tag</h2>
+	<h4>The &#60;caption&#62; tag must be inserted immediately after the &#60;table&#62; tag.</h4>
+	<table class="caption">
+	  <caption>Monthly savings</caption>
+	  <tr>
+	    <th>Month</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>January</td>
+	    <td>$100</td>
+	  </tr>
+	</table>
+	<p>----Default CSS style----</p>
+	<pre>
+caption {
+  display: table-caption;
+  text-align: center;
+}</pre>
+	<br><br>
+
+	<h2>15. HTML &#60;cite&#62; Tag</h2>
+	<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+	<p>----Default CSS style----</p>
+	<pre>
+caption {
+  display: table-caption;
+  text-align: center;
+}</pre>
+	<br><br>
+
+	<h2>16. HTML &#60;code&#62; Tag</h2>
+	<h4>Here is a bashrc code and the font-family is <i>Consolas</i></h4>
+	<pre style="background: #bca;"><code>
+echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile
+. ~/.bash_profile
+
+[root@gByteSaver-310 bin]# cat catalina.sh | grep "JAVA_OPTS="
+#JAVA_OPTS="$JAVA_OPTS -Dorg.apache.catalina.security.SecurityListener.UMASK=`umask`"
+JAVA_OPTS="$JAVA_OPTS $JSSE_OPTS -Djava.security.egd=file:/dev/./urandom"
+</code>
+	</pre>
+	<p>----Default CSS style----</p>
+	<pre>
+code {
+  font-family: monospace;
+}</pre>
+	<br><br>
+
+
+	<h2>17. HTML &#60;em&#62; Tag</h2>
+	<p>You <em>have</em> to hurry up!</p>
+	<p>We <em>cannot</em> live like this.</p>
+	</pre>
+	<p>----Default CSS style----</p>
+	<pre>
+em {
+  font-style: italic;
+}</pre>
+	<br><br>
+
+	<h2>18-20. HTML &#60;form&#62; and &#60;fieldset&#62; &#60;legend&#62; Tag</h2>
+	<form action="/action_page.php">
+	 <fieldset>
+	  <legend>Personal Info:</legend>
+	  <label for="fname">First name:</label>
+	  <input type="text" id="fname" name="fname"><br><br>
+	  <label for="lname">Last name:</label>
+	  <input type="text" id="lname" name="lname"><br><br>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email"><br><br>
+	  <label for="birthday">Birthday:</label>
+	  <input type="date" id="birthday" name="birthday"><br><br>
+	  <input type="submit" value="Submit">
+	  <input type="reset" value="Reset">
+	 </fieldset>
+	</form>
+	<p>----Default CSS style----</p>
+	<pre>
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+}</pre>
+	<br><br>
+
+
+	<h2>21-22. HTML &#60;figure&#62; and &#60;figcaption&#62; Tag</h2>
+	<figure>
+		<img src="images/figure.png" alt="figure">
+		<figcaption>Caption: Ayra Fone Logo</figcaption>
+	</figure>
+	<p>----Default CSS style----</p>
+	<pre>
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+figcaption {
+  display: block;
+}</pre>
+	<br><br>
+
+	<h2>23. HTML &#60;hr&#62;  Tag</h2>
+	<hr>
+	<p>----Default CSS style----</p>
+	<pre>
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}</pre>
+	<br><br>
+
+	<h2>24. HTML &#60;i&#62;  Tag</h2>
+	<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam sed assumenda nesciunt ab obcaecati? Id, quas commodi quaerat quos tempora.</i>
+	<p>----Default CSS style----</p>
+	<pre>
+i {
+  font-style: italic;
+}</pre>
+	<br><br>
+
+	<h2>25. HTML &#60;iframe&#62;  Tag</h2>
+	<iframe src="http://revesoft.com" width="800" height="400"></iframe>
+	<p>----Default CSS style----</p>
+	<pre>
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}</pre>
+	<br><br>
+
+	<h2>26. HTML &#60;img&#62;  Tag</h2>
+	<img src="images/world.png" alt="Facebook Login Page Image">
+	<p>----Default CSS style----</p>
+	<pre>
+img {
+  display: inline-block;
+}</pre>
+	<br><br>
+
+	<h2>27-28. HTML &#60;ol&#62; &#60;ul&#62; &#60;li&#62;  Tag</h2>
+	 <ol>
+	  <li>BD</li>
+	  <li>India</li>
+	  <li>Srilanka</li>
+	</ol>
+
+	<ul>
+	  <li>BD</li>
+	  <li>India</li>
+	  <li>Srilanka</li>
+	</ul> 
+	<p>----Default CSS style----</p>
+	<pre>
+li {
+  display: list-item;
+}</pre>
+	<br><br>
+
+
+	<h2>29. HTML &#60;pre&#62; Tag</h2>
+	<h4>Here is a preformatted text below.</h4>
+	<pre>
+Kindly, contact your server provider for this type of sudden reboot issue whether there is any HDD issue or power failure issue.
+This type of sudden reboot will make you lose your data in a running service.
+If you need to reboot your server anytime, inform us before doing it so that we can stop the running services first and then you can reboot.
+</pre>
+	<p>----Default CSS style----</p>
+	<pre>
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}</pre>
+	<br><br>
+
+
+	<h2>30. HTML &#60;q&#62; Tag</h2>
+	<h4>Mark up a short quotation:</h4>
+	<p>Our oath:
+<q>Build a future where people live in harmony with nature.</q>
+We hope we succeed.</p>
+	<p>----Default CSS style----</p>
+	<pre>
+q {
+  display: inline;
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}</pre>
+	<br><br>
+
+
+	<h2>31. HTML &#60;s&#62; Tag</h2>
+	<pre>Price: <s>30$</s>  20$</pre>
+	<p>----Default CSS style----</p>
+	<pre>
+s {
+  text-decoration: line-through;
+}</pre>
+	<br><br>
+
+
+	<h2>32. HTML &#60;strong&#62; Tag</h2>
+	<strong>Here is bold text made by strong element</strong>
+	<p>----Default CSS style----</p>
+	<pre>
+strong {
+  font-weight: bold;
+}</pre>
+	<br><br>
+
+
+	<h2>33-34. HTML &#60;sub&#62; &#60;sup&#62; Tag</h2>
+	<p>This text contains <sub>subscript</sub> text.</p> <p>A<sub>2</sub>+B<sub>2</sub></p>
+    <p>This text contains <sup>superscript</sup> text.</p> <p>a<sup>2</sup>+b<sup>2</sup></p>
+	<p>----Default CSS style----</p>
+	<pre>
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}</pre>
+	<br><br>
+
+
+
+</body>
+</html>
